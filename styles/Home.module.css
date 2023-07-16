@@ -1,0 +1,111 @@
+.container {
+  min-height: 100vh;
+  padding: 0 6rem 3rem 6rem;
+  background: var(--page-bg);
+}
+
+.pageTitle {
+  margin: 0;
+  padding: 3rem 0 3.5rem 0;
+  text-align: center;
+  color: var(--font-color);
+  text-transform: uppercase;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  min-width: 285px;
+  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--card-bg) !important;
+}
+
+.card:hover {
+  background: var(--hover-card-bg) !important;
+}
+
+.title {
+  color: var(--font-color);
+  margin: 0;
+  padding: 32px 0;
+}
+
+.card:hover .cardTitle {
+  color: var(--hover-font-color);
+}
+
+.cardTitle {
+  color: var(--font-color);
+  text-align: center;
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardImg {
+  height: 130px !important;
+  width: 130px !important;
+  object-fit: cover !important;
+  border-radius: 150px;
+}
+
+.card .selectBtn {
+  background: var(--default-seleted-bg) !important;
+}
+
+.card .activeBtn {
+  background: var(--selected-bg) !important;
+}
+
+.selectBtn:hover {
+  background-color: var(--hover-selected-bg) !important;
+}
+
+.sumbitBtn {
+  background: var(--card-bg) !important;
+  position: fixed !important;
+  bottom: 3rem;
+  right: 3rem;
+  padding: 14px 16px !important;
+}
+
+.sumbitBtn:hover {
+  background: var(--hover-card-bg) !important;
+  color: var(--hover-font-color);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .card {
+    min-width: 230px;
+    min-height: 230px;
+    margin: auto;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .cardImg {
+    height: 85px !important;
+    width: 85px !important;
+  }
+
+  .sumbitBtn {
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--selected-bg) !important;
+  }
+}

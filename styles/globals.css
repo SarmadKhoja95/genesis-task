@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  --page-bg: #0D2436;
+  --font-color: #FFFFFF;
+  --hover-font-color: #CCCCCC;
+  --card-bg: #009B86;
+  --hover-card-bg: #34AC9C;
+  --default-seleted-bg: #007465;
+  --hover-selected-bg: #004e43;
+  --selected-bg: #009b36;
+  }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
